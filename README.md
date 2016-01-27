@@ -1,0 +1,3 @@
+# Apps-on-maps
+This is for ios apps developed based on maps. 
+The app is for calculating the area for any arbitrarily shaped (closed polygon) area of land or water body on the earth. You can enter the address of your target start point in the search bar at the top of the app. Then long press on your start point and place a pin on the map, followed by all the subsequent points along the outside edge of the shape of your land. Then click on the calculator button on the bottom right hand corner and you will get the area and perimeter of your land. For deleting your land or any pins on the map, just click the delete button on the bottom left corner.  You can also choose the map type you want by clicking on the segment control button at the bottom center. 

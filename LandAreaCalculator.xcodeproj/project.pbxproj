@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		078EF00E1C038F0A00D077AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078EF00D1C038F0A00D077AE /* AppDelegate.swift */; };
+		078EF0101C038F0A00D077AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078EF00F1C038F0A00D077AE /* ViewController.swift */; };
+		078EF0131C038F0A00D077AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 078EF0111C038F0A00D077AE /* Main.storyboard */; };
+		078EF0151C038F0A00D077AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 078EF0141C038F0A00D077AE /* Assets.xcassets */; };
+		078EF0181C038F0A00D077AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 078EF0161C038F0A00D077AE /* LaunchScreen.storyboard */; };
+		078EF0231C038F0B00D077AE /* LandAreaCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078EF0221C038F0B00D077AE /* LandAreaCalculatorTests.swift */; };
+		078EF02E1C038F0B00D077AE /* LandAreaCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078EF02D1C038F0B00D077AE /* LandAreaCalculatorUITests.swift */; };
+		078EF03C1C0392C700D077AE /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078EF03B1C0392C700D077AE /* GoogleMaps.framework */; };
+		078EF0451C03C3C500D077AE /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078EF0431C03C3C500D077AE /* SwiftyJSON.swift */; };
+		078EF0461C03C3C500D077AE /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078EF0441C03C3C500D077AE /* DataManager.swift */; };
+		3EDB74668D71A90279E362E9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 661ADEDABB6734F91059656F /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		078EF01F1C038F0B00D077AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 078EF0021C038F0A00D077AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 078EF0091C038F0A00D077AE;
+			remoteInfo = LandAreaCalculator;
+		};
+		078EF02A1C038F0B00D077AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 078EF0021C038F0A00D077AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 078EF0091C038F0A00D077AE;
+			remoteInfo = LandAreaCalculator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		078EF00A1C038F0A00D077AE /* LandAreaCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LandAreaCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		078EF00D1C038F0A00D077AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		078EF00F1C038F0A00D077AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		078EF0121C038F0A00D077AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		078EF0141C038F0A00D077AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		078EF0171C038F0A00D077AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		078EF0191C038F0A00D077AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		078EF01E1C038F0B00D077AE /* LandAreaCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LandAreaCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		078EF0221C038F0B00D077AE /* LandAreaCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandAreaCalculatorTests.swift; sourceTree = "<group>"; };
+		078EF0241C038F0B00D077AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		078EF0291C038F0B00D077AE /* LandAreaCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LandAreaCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		078EF02D1C038F0B00D077AE /* LandAreaCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandAreaCalculatorUITests.swift; sourceTree = "<group>"; };
+		078EF02F1C038F0B00D077AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		078EF03B1C0392C700D077AE /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Pods/GoogleMaps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		078EF0431C03C3C500D077AE /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		078EF0441C03C3C500D077AE /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		661ADEDABB6734F91059656F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D050C12B21B6539496F1074A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FE020C29B1DB4D0ADA6E016E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		078EF0071C038F0A00D077AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				078EF03C1C0392C700D077AE /* GoogleMaps.framework in Frameworks */,
+				3EDB74668D71A90279E362E9 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		078EF01B1C038F0B00D077AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		078EF0261C038F0B00D077AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		078EF0011C038F0A00D077AE = {
+			isa = PBXGroup;
+			children = (
+				078EF00C1C038F0A00D077AE /* LandAreaCalculator */,
+				078EF0211C038F0B00D077AE /* LandAreaCalculatorTests */,
+				078EF02C1C038F0B00D077AE /* LandAreaCalculatorUITests */,
+				078EF00B1C038F0A00D077AE /* Products */,
+				F14AE9FA2F1CB9B73C50ADD5 /* Pods */,
+				0AF572865702922C01DB208E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		078EF00B1C038F0A00D077AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				078EF00A1C038F0A00D077AE /* LandAreaCalculator.app */,
+				078EF01E1C038F0B00D077AE /* LandAreaCalculatorTests.xctest */,
+				078EF0291C038F0B00D077AE /* LandAreaCalculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		078EF00C1C038F0A00D077AE /* LandAreaCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				078EF00D1C038F0A00D077AE /* AppDelegate.swift */,
+				078EF00F1C038F0A00D077AE /* ViewController.swift */,
+				078EF0111C038F0A00D077AE /* Main.storyboard */,
+				078EF0141C038F0A00D077AE /* Assets.xcassets */,
+				078EF0161C038F0A00D077AE /* LaunchScreen.storyboard */,
+				078EF0191C038F0A00D077AE /* Info.plist */,
+				078EF0431C03C3C500D077AE /* SwiftyJSON.swift */,
+				078EF0441C03C3C500D077AE /* DataManager.swift */,
+			);
+			path = LandAreaCalculator;
+			sourceTree = "<group>";
+		};
+		078EF0211C038F0B00D077AE /* LandAreaCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				078EF0221C038F0B00D077AE /* LandAreaCalculatorTests.swift */,
+				078EF0241C038F0B00D077AE /* Info.plist */,
+			);
+			path = LandAreaCalculatorTests;
+			sourceTree = "<group>";
+		};
+		078EF02C1C038F0B00D077AE /* LandAreaCalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				078EF02D1C038F0B00D077AE /* LandAreaCalculatorUITests.swift */,
+				078EF02F1C038F0B00D077AE /* Info.plist */,
+			);
+			path = LandAreaCalculatorUITests;
+			sourceTree = "<group>";
+		};
+		0AF572865702922C01DB208E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				078EF03B1C0392C700D077AE /* GoogleMaps.framework */,
+				661ADEDABB6734F91059656F /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F14AE9FA2F1CB9B73C50ADD5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE020C29B1DB4D0ADA6E016E /* Pods.debug.xcconfig */,
+				D050C12B21B6539496F1074A /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		078EF0091C038F0A00D077AE /* LandAreaCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 078EF0321C038F0B00D077AE /* Build configuration list for PBXNativeTarget "LandAreaCalculator" */;
+			buildPhases = (
+				F07E17AA4E2BF0C862A0C9D5 /* Check Pods Manifest.lock */,
+				078EF0061C038F0A00D077AE /* Sources */,
+				078EF0071C038F0A00D077AE /* Frameworks */,
+				078EF0081C038F0A00D077AE /* Resources */,
+				F23C2012B77C82D9AFB58B2D /* Embed Pods Frameworks */,
+				3EE2E9447A809782B9A77CBE /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LandAreaCalculator;
+			productName = LandAreaCalculator;
+			productReference = 078EF00A1C038F0A00D077AE /* LandAreaCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		078EF01D1C038F0B00D077AE /* LandAreaCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 078EF0351C038F0B00D077AE /* Build configuration list for PBXNativeTarget "LandAreaCalculatorTests" */;
+			buildPhases = (
+				078EF01A1C038F0B00D077AE /* Sources */,
+				078EF01B1C038F0B00D077AE /* Frameworks */,
+				078EF01C1C038F0B00D077AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				078EF0201C038F0B00D077AE /* PBXTargetDependency */,
+			);
+			name = LandAreaCalculatorTests;
+			productName = LandAreaCalculatorTests;
+			productReference = 078EF01E1C038F0B00D077AE /* LandAreaCalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		078EF0281C038F0B00D077AE /* LandAreaCalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 078EF0381C038F0B00D077AE /* Build configuration list for PBXNativeTarget "LandAreaCalculatorUITests" */;
+			buildPhases = (
+				078EF0251C038F0B00D077AE /* Sources */,
+				078EF0261C038F0B00D077AE /* Frameworks */,
+				078EF0271C038F0B00D077AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				078EF02B1C038F0B00D077AE /* PBXTargetDependency */,
+			);
+			name = LandAreaCalculatorUITests;
+			productName = LandAreaCalculatorUITests;
+			productReference = 078EF0291C038F0B00D077AE /* LandAreaCalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		078EF0021C038F0A00D077AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Jun Dang";
+				TargetAttributes = {
+					078EF0091C038F0A00D077AE = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					078EF01D1C038F0B00D077AE = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 078EF0091C038F0A00D077AE;
+					};
+					078EF0281C038F0B00D077AE = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 078EF0091C038F0A00D077AE;
+					};
+				};
+			};
+			buildConfigurationList = 078EF0051C038F0A00D077AE /* Build configuration list for PBXProject "LandAreaCalculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 078EF0011C038F0A00D077AE;
+			productRefGroup = 078EF00B1C038F0A00D077AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				078EF0091C038F0A00D077AE /* LandAreaCalculator */,
+				078EF01D1C038F0B00D077AE /* LandAreaCalculatorTests */,
+				078EF0281C038F0B00D077AE /* LandAreaCalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		078EF0081C038F0A00D077AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				078EF0181C038F0A00D077AE /* LaunchScreen.storyboard in Resources */,
+				078EF0151C038F0A00D077AE /* Assets.xcassets in Resources */,
+				078EF0131C038F0A00D077AE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		078EF01C1C038F0B00D077AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		078EF0271C038F0B00D077AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3EE2E9447A809782B9A77CBE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F07E17AA4E2BF0C862A0C9D5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F23C2012B77C82D9AFB58B2D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		078EF0061C038F0A00D077AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				078EF0451C03C3C500D077AE /* SwiftyJSON.swift in Sources */,
+				078EF0461C03C3C500D077AE /* DataManager.swift in Sources */,
+				078EF0101C038F0A00D077AE /* ViewController.swift in Sources */,
+				078EF00E1C038F0A00D077AE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		078EF01A1C038F0B00D077AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				078EF0231C038F0B00D077AE /* LandAreaCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		078EF0251C038F0B00D077AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				078EF02E1C038F0B00D077AE /* LandAreaCalculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		078EF0201C038F0B00D077AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 078EF0091C038F0A00D077AE /* LandAreaCalculator */;
+			targetProxy = 078EF01F1C038F0B00D077AE /* PBXContainerItemProxy */;
+		};
+		078EF02B1C038F0B00D077AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 078EF0091C038F0A00D077AE /* LandAreaCalculator */;
+			targetProxy = 078EF02A1C038F0B00D077AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		078EF0111C038F0A00D077AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				078EF0121C038F0A00D077AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		078EF0161C038F0A00D077AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				078EF0171C038F0A00D077AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		078EF0301C038F0B00D077AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		078EF0311C038F0B00D077AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		078EF0331C038F0B00D077AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE020C29B1DB4D0ADA6E016E /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleMaps/Frameworks",
+				);
+				INFOPLIST_FILE = LandAreaCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.beida.LandAreaCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		078EF0341C038F0B00D077AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D050C12B21B6539496F1074A /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleMaps/Frameworks",
+				);
+				INFOPLIST_FILE = LandAreaCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.beida.LandAreaCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		078EF0361C038F0B00D077AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LandAreaCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.beida.LandAreaCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LandAreaCalculator.app/LandAreaCalculator";
+			};
+			name = Debug;
+		};
+		078EF0371C038F0B00D077AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LandAreaCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.beida.LandAreaCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LandAreaCalculator.app/LandAreaCalculator";
+			};
+			name = Release;
+		};
+		078EF0391C038F0B00D077AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LandAreaCalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.beida.LandAreaCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LandAreaCalculator;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		078EF03A1C038F0B00D077AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LandAreaCalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.beida.LandAreaCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LandAreaCalculator;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		078EF0051C038F0A00D077AE /* Build configuration list for PBXProject "LandAreaCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				078EF0301C038F0B00D077AE /* Debug */,
+				078EF0311C038F0B00D077AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		078EF0321C038F0B00D077AE /* Build configuration list for PBXNativeTarget "LandAreaCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				078EF0331C038F0B00D077AE /* Debug */,
+				078EF0341C038F0B00D077AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		078EF0351C038F0B00D077AE /* Build configuration list for PBXNativeTarget "LandAreaCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				078EF0361C038F0B00D077AE /* Debug */,
+				078EF0371C038F0B00D077AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		078EF0381C038F0B00D077AE /* Build configuration list for PBXNativeTarget "LandAreaCalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				078EF0391C038F0B00D077AE /* Debug */,
+				078EF03A1C038F0B00D077AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 078EF0021C038F0A00D077AE /* Project object */;
+}

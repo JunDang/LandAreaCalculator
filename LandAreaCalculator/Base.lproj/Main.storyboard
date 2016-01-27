@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LandAreaCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="please enter address" translatesAutoresizingMaskIntoConstraints="NO" id="kpV-0W-Pqb">
+                                <rect key="frame" x="0.0" y="15" width="600" height="44"/>
+                                <color key="barTintColor" red="0.29883357960000001" green="0.58119735269999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EQE-03-0ma" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="59" width="600" height="497"/>
+                                <color key="backgroundColor" red="0.85586332070000004" green="0.85586332070000004" blue="0.85586332070000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aXT-kn-XPG">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <navigationItem id="wRw-NQ-xSs">
+                                        <nil key="title"/>
+                                        <barButtonItem key="leftBarButtonItem" image="calculator-32" id="kKT-GP-u4O">
+                                            <connections>
+                                                <action selector="calculateButtonPressed:" destination="BYZ-38-t0r" id="enS-Ji-x0E"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="FT2-7L-G60">
+                                            <rect key="frame" x="180" y="7" width="240" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="Normal"/>
+                                                <segment title="Terrain"/>
+                                                <segment title="Hybrid"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="segmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="e3G-kl-Jok"/>
+                                            </connections>
+                                        </segmentedControl>
+                                        <barButtonItem key="rightBarButtonItem" image="delete-26" id="Rp7-cb-qL5">
+                                            <connections>
+                                                <action selector="deleteButtonPressed:" destination="BYZ-38-t0r" id="Odl-EU-DFE"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="kpV-0W-Pqb" secondAttribute="trailing" constant="-20" id="CCH-zh-nl1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aXT-kn-XPG" secondAttribute="trailing" constant="-20" id="DmM-mp-chK"/>
+                            <constraint firstItem="kpV-0W-Pqb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="GPV-FZ-h0o"/>
+                            <constraint firstItem="aXT-kn-XPG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Xf3-ei-Fg9"/>
+                            <constraint firstItem="EQE-03-0ma" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Z0Z-Ky-aWZ"/>
+                            <constraint firstItem="aXT-kn-XPG" firstAttribute="top" secondItem="EQE-03-0ma" secondAttribute="bottom" id="ZFB-7g-RGl"/>
+                            <constraint firstItem="kpV-0W-Pqb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="15" id="c2P-6Z-cq2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EQE-03-0ma" secondAttribute="trailing" constant="-20" id="fhB-VR-pA0"/>
+                            <constraint firstItem="aXT-kn-XPG" firstAttribute="top" secondItem="EQE-03-0ma" secondAttribute="bottom" id="l69-n5-Y9D"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aXT-kn-XPG" secondAttribute="bottom" id="neP-tP-jZK"/>
+                            <constraint firstItem="EQE-03-0ma" firstAttribute="top" secondItem="kpV-0W-Pqb" secondAttribute="bottom" id="z5m-VA-zxj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addressInput" destination="kpV-0W-Pqb" id="C5d-ME-X9h"/>
+                        <outlet property="mapTypeSegmentedControl" destination="FT2-7L-G60" id="kMT-FP-Wh1"/>
+                        <outlet property="mapView" destination="EQE-03-0ma" id="seZ-UH-2C1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="346"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="calculator-32" width="32" height="32"/>
+        <image name="delete-26" width="26" height="26"/>
+    </resources>
+</document>
